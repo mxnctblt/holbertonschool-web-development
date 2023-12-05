@@ -8,7 +8,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - What is a markup language
 - What is the DOM
 - What is an element / tag
-- hat is an attribute
+- What is an attribute
 - What the purpose of each HTML tag
 ```
 
