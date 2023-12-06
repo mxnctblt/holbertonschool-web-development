@@ -26,4 +26,11 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 For this task, please write an amazing README.md and copy the index.html file from **HTML, advanced**.
 ```
 
+1. Import the style
+```
+Before starting the implementation of the Style:
+- Create the file styles.css
+- Import styles.css in the head of your index.html
+```
+
 <img src="./media/css_advanced.jpg">
