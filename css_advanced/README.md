@@ -32,5 +32,14 @@ Before starting the implementation of the Style:
 - Create the file styles.css
 - Import styles.css in the head of your index.html
 ```
+2. Header and Banner
+```
+Based on the Figma file, add the correct styling to the header and first section of the page
+
+Reminders:
+- All colors values, width, height and images are part of the Figma
+- Keep your CSS simple and clean, use as simple as you can CSS selectors
+- Be accurate, the final result should be the same as the page at the end!
+```
 
 <img src="./media/css_advanced.jpg">
