@@ -1,100 +1,81 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
+    width: 1440px;
+    position: relative;
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 1440px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Add a media query for smaller screens */
-@media (max-width: 1440px) {
-    body {
-      background-size: 100% auto;
-    }
-}
-
-/* HEADER SECTION */
+/* HEADER */
 header {
-    width: 1103.408px;
-    height: 29.461px;
+    width: 1105.41px;
+    height: 29.46px;
     position: absolute;
-    margin-top: 36.02px;
+    top: 36.02px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
 }
-
 header img {
     width: 167.02px;
     height: 29.46px;
 }
-
-header div a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
 .menu {
     width: 234px;
     height: 15px;
-    display: inline-flex;
-    height: 15px;
-    margin-top: 7px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 52px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menu a {
+    color: inherit;
+    text-decoration: none;
 }
 
-/* BANNER SECTION */
-
-.banner {
+/* BANNER */
+.main-part {
     height: 1093px;
-    background-image: url('media/header/background.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(media/header/background.png);
+    fill: #071629;
 }
-
-.banner h1 {
-    color: #FFF;
-    text-align: center;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.main-part h1 {
+    position: absolute;
     width: 684px;
     height: 151px;
-    position: absolute;
-    top: 180px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 120px;
+    font-weight: bold;
 }
-
 .slogan {
-    color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 320px;
+    top: 361px;
     display: flex;
     justify-content: space-between;
     width: 330px;
     font-size: 16px;
     font-weight: bold;
 }
-
-.banner button { 
-    color: white;
+button {
+    margin: 0;
+    padding: 0;
     border: none;
     background: none;
+    color: inherit;
     font: inherit;
     text-align: inherit;
     cursor: pointer;
@@ -106,40 +87,36 @@ header div a {
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 380px;
 }
-
-.banner h2 {
-    position: absolute;
-    color: white;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 480px;
-    font-weight: 300;
+.main-part button {
+    top: 419px;
 }
-
-.banner h2 span {
+.highlight-title {
     color: #c271ff;
     font-weight: bold;
 }
-
-.pros {
-    color: white;
+.main-part h2 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 600px;
+    top: 631px;
+    font-weight: 300;
+}
+.pros {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 758px;
     width: 1009px;
     height: 237px;
     display: flex;
     justify-content: space-between;
 }
-
 .pro {
     width: 150px;
     height: 237px;
@@ -149,18 +126,247 @@ header div a {
     text-align: center;
     margin: 0;
 }
-
 .pro img {
     border-radius: 50%;
 }
-  
 .pro h3 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 900;
 }
-
 .pro p {
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
 }
-  
+
+/* QUOTE */
+.testimonials {
+    background-color: #c271ff;
+    height: 392px;
+}
+.testimonials img {
+    border-radius: 50%;
+    position: absolute;
+    top: 1201px;
+    left: 259px;
+}
+.testimonials__quote {
+    position: absolute;
+    top: 1201px;
+    left: 472px;
+    width: 730px;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.testimonials__quote__autor {
+    width: 100%;
+}
+.testimonials__quote__autor P {
+    margin-top: 10px;
+}
+.testimonials__quote__autor__name {
+    font-weight: bold;
+}
+.testimonials__quote__autor__job {
+    font-style: italic;
+}
+
+/* VIDEOS */
+.tutorials {
+    color: #071629;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1572px;
+    width: 1228px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tutorials h1 {
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+}
+.tutorials__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.tutorials__content_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 255px;
+    height: 335px;
+}
+.tutorials__content_item__img-preview {
+    position: relative;
+}
+.tutorials__content_item__overlay {
+    position: absolute;
+    background-image: url(media/videos/play.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tutorials__content_item h2 {
+    margin-top: 18px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.tutorials__content_item p {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 24px;
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.5);
+}
+.tutorials__content_item__rating {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #c271ff;
+}
+.tutorials__content_item__rating__autor {
+    display: flex;
+    margin-top: 15px;
+    gap: 13px;
+}
+.tutorials__content_item__rating__autor img {
+    border-radius: 50%;
+}
+.tutorials__content_item__rating__stars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+}
+.tutorials__content_item__rating__stars__star {
+    width: 100%;
+}
+.tutorials__content_item__rating__stars p {
+    text-align: right;
+    color: #c271ff;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+/* MEMBERSHIP */
+.membership {
+    position: absolute;
+    top: 2109px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #071629;
+    height: 502px;
+    width: 100%;
+}
+.membership h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 32;
+    font-weight: 300;
+    margin-top: 70px;
+}
+.membership__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+}
+.membership__content__item {
+    width: 257px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.membership__content__item h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.membership__content__item p {
+    font-size: 14px;
+    padding: 15px;
+}
+.membership__content__button {
+    top: 406px;
+}
+
+/* FAQ */
+.faq {
+    position: absolute;
+    top: 2678px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 920px;
+    height: 707px;
+    color: #071629;
+}
+.faq h1 {
+    font-size: 60px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+.faq__container {
+    display: flex;
+    flex-direction: column;
+}
+.faq__container__row {
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+} 
+.faq__container__row__item {
+    width: 350px;
+    height: 242px;
+}
+.faq__container__row__item h2 {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.faq__container__row__item p {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    top: 3469px;
+    height: 249px;
+    width: 100%;
+    background-color: #071629;
+}
+.footer__logo {
+    position: absolute;
+    top: 95px;
+    left: 165px;
+}
+.footer__socials {
+    position: absolute;
+    top: 90px;
+    right: 240px;
+    display: flex;
+    gap: 20px;
+}
+.footer__copyright {
+    position: absolute;
+    top: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12;
+    opacity: 0.35;
+}

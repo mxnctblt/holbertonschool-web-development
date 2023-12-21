@@ -41,5 +41,11 @@ Reminders:
 - Keep your CSS simple and clean, use as simple as you can CSS selectors
 - Be accurate, the final result should be the same as the page at the end!
 ```
+3. Quotes
+```
+Based on the Figma file, add the correct styling to the quote section
 
-<img src="./media/css_advanced.jpg">
+Tips:
+You can start to see similar or common style, time to start to centralize your style and CSS selectors
+```
+<img src="./media/readme/css_advanced.jpg">
